@@ -1,9 +1,16 @@
-import { Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { Router } from './router';
 
 export const App = () => {
   return (
-    <View>
-      <Text>instaMobile</Text>
+    <View style={styles.container}>
+      <Router />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
